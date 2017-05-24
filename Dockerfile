@@ -22,6 +22,7 @@ RUN apt-get install -y build-essential cmake
 RUN apt-get autoremove -y
 RUN apt-get autoclean -y
 RUN apt-get clean -y
+RUN apt-get install software-properties-common -y
 
 # Install NodeJS
 RUN wget -qO- https://deb.nodesource.com/setup_7.x | sh
